@@ -9,7 +9,7 @@ npm install -g nodemon
 then:
 nodemon index.js
 then: 
-"try to console log sometiong and it will appear in your terminal " 
+"try to console log sometiong inside index.js file and it will appear in your terminal " 
 
 ```
 ## Step 1 : Create node class 😒
