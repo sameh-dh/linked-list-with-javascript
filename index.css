@@ -123,7 +123,7 @@ button:hover {
   color: white;
   font-weight: bold;
   display: flex;
-    box-shadow: inset 0px 0px 20px #8707ffaf;
+  box-shadow: inset 0px 0px 20px #8707ffaf;
 }
 
 .node-container p {
@@ -133,7 +133,8 @@ button:hover {
   padding-left: 0.5em;
 }
 .next-node {
-  width: 50px;
+  min-width: 50px;
+  max-width: fit-content;
   height: 100%;
   border-left: 2px solid #8707ff;
   
