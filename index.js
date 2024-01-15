@@ -4,3 +4,5 @@ class Node {
         this.next = next ; 
     }
     }
+
+    console.log("hi") 
