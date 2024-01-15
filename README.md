@@ -22,7 +22,7 @@ then:
     }
     }
 ```
-## Step 1 : Create LinekdList class and insert first NODE 😒
+## Step 2 : Create LinekdList class and insert first NODE 😒
 ```js
   class LinkedList {
   constructor() {
