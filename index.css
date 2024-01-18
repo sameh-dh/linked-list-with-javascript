@@ -1,15 +1,25 @@
 body {
   background-color: rgb(31, 30, 30);
-  width: 100%;
+  /* background-image: linear-gradient(to right, #434343 -10%, rgb(31, 30, 30) ); */
+  width: 100dvw;
   justify-content: center;
   align-items: center;
   justify-items: center;
   display: grid;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  width: 100px;
+     
+  top: -5px;
 }
 
 .input {
-  color: #8707ff;
-  border: 2px solid #8707ff;
+  color: #F97794;
+  border: 2px solid #F97794;
   border-radius: 10px;
   padding: 10px 25px;
   background: transparent;
@@ -40,12 +50,12 @@ body {
 }
 
 .input:active {
-  box-shadow: 2px 2px 15px #8707ff inset;
+  box-shadow: 2px 2px 15px #F97794 inset;
 }
 
 input:focus {
-  border: 2px solid #8707ff;
-  box-shadow: 2px 2px 15px #8707ff inset;
+  border: 2px solid #F97794;
+  box-shadow: 2px 2px 15px #F97794 inset;
 }
 
 /* button */
@@ -57,7 +67,7 @@ input:focus {
 
 button {
   position: relative;
-  border: 2px ridge #8707ff;
+  border: 2px ridge #F97794;
   padding: 0.7em 2em 0.7em 2em;
   outline: none;
   background-color: transparent;
@@ -100,7 +110,7 @@ button:hover::after {
 }
 
 button:hover {
-  box-shadow: inset 0px 0px 25px #8707ff;
+  box-shadow: inset 0px 0px 7px #F97794;
 }
 
 /* nodes */
@@ -108,24 +118,28 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 70px;
   flex-wrap: wrap;
   row-gap: 10px;
 }
+
 .node-container {
   min-width: fit-content;
   max-width: fit-content;
   height: 50px;
-  border: #8707ff solid 2px;
+  border: #7931a2 solid 2px;
 
-  border-radius: 15px;
+  border-radius: 0px;
   text-align: center;
-  color: white;
+  color: rgb(235, 235, 235);
   font-weight: bold;
   display: flex;
-  box-shadow: inset 0px 0px 20px #8707ffaf;
+  background-color: #9F44D3;
 }
 
+.node-container:last-child {
+  box-shadow: inset 0px 0px 12px #7931a2;
+}
 .node-container p {
   min-width: 100px;
   max-width: fit-content;
@@ -136,12 +150,12 @@ button:hover {
   min-width: 50px;
   max-width: fit-content;
   height: 100%;
-  border-left: 2px solid #8707ff;
-  
+  border-left: 2px solid #7931a2;
+  background-color: #7931a2;
 }
 .arrow {
   width: 50px;
-  border: solid #8707ff 1px;
+  border: solid #7931a2 1px;
 
   margin-left: -10px;
 }
