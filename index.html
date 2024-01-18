@@ -8,7 +8,7 @@
     <title>Linked list with javascript</title>
   </head>
   <body>
-  <img src="./coffee-cup.gif" />
+    <img src="./coffee-cup.gif" />
     <!-- input  -->
     <input
       type="text"
@@ -19,45 +19,64 @@
     />
     <!-- buttons  -->
     <div class="buttons-container">
-      <button onclick={inputValue()}>Add First</button>
+      <button onclick="{inputValue()}">Add First</button>
       <button>Add Last</button>
 
-
-      <button>Add at Index <input type="number" name="index" class="input index" placeholder="index" /></button>
-      <button>Get at Index <input type="number" name="index" class="input index" placeholder="index" /></button>
-      <button>Remove at Index <input type="number" name="index" class="input index" placeholder="index" /></button>
+      <button>
+        Add at Index
+        <input
+          type="number"
+          name="index"
+          class="input index"
+          placeholder="index"
+        />
+      </button>
+      <button>
+        Get at Index
+        <input
+          type="number"
+          name="index"
+          class="input index"
+          placeholder="index"
+        />
+      </button>
+      <button>
+        Remove at Index
+        <input
+          type="number"
+          name="index"
+          class="input index"
+          placeholder="index"
+        />
+      </button>
     </div>
-   
+
     <div class="buttons-container">
-        <button>Clear List</button>
-        <button>Show Data</button>
+      <button>Clear List</button>
+      <button>Show Data</button>
     </div>
     <!-- nodes -->
-    <div class="node-main-container">
- <div class="node-container" >
-  <p>40</p>
-  <div class="next-node">  </div>
-  
- </div>
- <div class="arrow"></div>
+    <div class="node-main-container" id="node-container">
+     
+   
+    </div>
 
-
- <div class="node-container" >
-  <p>700</p>
-  <div class="next-node">  </div>
-  
- </div>
- <div class="arrow"></div>
-
-
- <div class="node-container" >
-  <p>150</p>
-  <div class="next-node"> <p>null</p>  </div>
-  
- </div>
- 
-</div>
-
-    <script src="./index.js" > </script>
+    <script src="./index.js"></script>
   </body>
 </html>
+   <!-- <div class="node-container">
+        <p>40</p>
+        <div class="next-node"></div>
+      </div>
+      <div class="arrow"></div>
+
+      <div class="node-container">
+        <p>700</p>
+        <div class="next-node"></div>
+      </div>
+      <div class="arrow"></div>
+
+      <div class="node-container">
+        <p>150</p>
+        <div class="next-node"><p>null</p></div>
+      </div> -->

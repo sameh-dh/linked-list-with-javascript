@@ -8,6 +8,7 @@ body {
   display: grid;
   position: relative;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 img {
