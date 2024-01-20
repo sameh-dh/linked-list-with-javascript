@@ -15,7 +15,7 @@ let inputValue = () => {
 };
 
 //create node container
-let createNodeContainer = (data) => {
+let createNodeContainer = (data,type) => {
   //get the div where we want to insert our new node in order to show it in the browser
   let currentDiv = document.getElementById("node-container");
 
@@ -33,30 +33,21 @@ let createNodeContainer = (data) => {
   const arrowNode = document.createElement("div");
   arrowNode.classList.add("arrow");
 
-  const nextNodeodeValue = document.createElement("p");
-  const nextNodeodeContent = document.createTextNode("null");
-  nextNodeodeValue.appendChild(nextNodeodeContent);
-  if (node.size === 1) {
-    nextNode.appendChild(nextNodeodeValue);
-  }
+  // const nextNodeodeValue = document.createElement("p");
+  // const nextNodeodeContent = document.createTextNode("null");
+  // nextNodeodeValue.appendChild(nextNodeodeContent);
+
+  // if (node.size === 1) {
+  //   nextNode.appendChild(nextNodeodeValue);
+  // }
+
   //now let's concat them together
   nodeContainer.appendChild(nodeValue);
   nodeContainer.appendChild(nextNode);
 
-  //then use appendChild to add the content
-  currentDiv.appendChild(nodeContainer);
-  currentDiv.insertBefore(nodeContainer, currentDiv.firstChild);
-  
-  if (node.size > 1 && node.size=== 2) {
-    console.log(node.size);
-    // currentDiv.append(arrowNode);
-    currentDiv.insertBefore(arrowNode.cloneNode(true), currentDiv.lastElementChild);
-    // currentDiv.insertBefore(arrowNode, currentDiv.firstElementChild);
-  }
-  if (node.size > 1 ) {
-    console.log(node.size);
-    // currentDiv.append(arrowNode);
-    // currentDiv.insertBefore(arrowNode, currentDiv.lastElementChild);
-    currentDiv.insertBefore(arrowNode.cloneNode(true), currentDiv.firstElementChild);
-  }
+ 
+if (type === "First") {
+  createNodeContainerFirst(currentDiv, nodeContainer , arrowNode)
+}
 };
+
